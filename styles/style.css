@@ -1,0 +1,23 @@
+:root {
+    --primary-color: rgb(250, 252, 137);
+    --secondary-color: rgb(43, 43, 43);
+}
+
+
+* {
+    margin: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--primary-color);
+    text-align: center;
+}
+
+body h1 {
+    padding: 30px;
+    font-size: 70px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: var(--secondary-color);
+}
