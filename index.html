@@ -8,18 +8,40 @@
 </head>
 <body>
     <h1>VLSMaker</h1>
-    <div class="requeriments">
-        <div class="data-net">
-            <label for="net"> Nombre de Red
-                <input name="net" type="text">
-            </label>
-            <label for="ips">Direcciones
-                <input name="ips" type="number">
-            </label>
-            <label for="mask">Máscara   /
-                <input name="mask" type="number">
-            </label>
+    <form class="requeriments-form">
+        <div id="requeriments" class="requeriments">
+            <h3>Red base</h3>
+            <div class="data-base-network">
+                <label for="ip-network"> IP Red Base:
+                    <input name="ip-network" type="number">
+                </label>
+                <label for="mask"> Máscara:   /
+                    <input name="mask" type="number">
+                </label>
+            </div>
+            <h3>Subredes</h3>
+            <div class="data-network0">
+                <label for="network"> Nombre de Red:
+                    <input name="network" type="text">
+                </label>
+                <label for="cant-ips">Direcciones:
+                    <input name="cant-ips" type="number">
+                </label>
+                <label for="mask">Máscara:   /
+                    <input name="mask" type="number">
+                </label>
+            </div>
+            
         </div>
+        <div class="btn-add">
+            <button type="button" id="btn-add-network" class="btn-add-network">
+                +
+            </button>
+        </div>
+    </form>
+    <div class="vlsm-graph">
+
     </div>
 </body>
+<script src="/scripts/main.js"></script>
 </html>
